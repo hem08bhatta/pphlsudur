@@ -1,0 +1,22 @@
+.marquee,  .marquee-with-options,  .marquee-vert-before,  .marquee-vert {
+
+
+	width: 100%;
+
+
+	overflow: hidden !important;
+
+
+	border: 0px solid #ccc;
+color: #FFF !important;
+
+}
+
+.marquee a,  .marquee-with-options a,  .marquee-vert-before a,  .marquee-vert a{
+
+
+	
+color: #FFF !important;
+
+}
+

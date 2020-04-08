@@ -194,7 +194,7 @@
 					<div class="uk-panel">
 						<ul class="uk-subnav uk-subnav-line">
 							<li><a href="#">डाउनलोड</a></li>
-							<li><a href="#" class="tm-modal-link">लग ईन</a></li>
+							<li><a href="#modal-a" class="tm-modal-link">लग ईन</a></li>
 						</ul>
 					</div>
 				</div>
@@ -279,94 +279,118 @@
 			</div>
 		</div>
 		<style>
-			.gafancybox-lock {overflow: hidden !important;}
-			.gafancybox-inner {overflow: hidden !important;}
+			.gafancybox-lock {
+				overflow: hidden !important;
+			}
+
+			.gafancybox-inner {
+				overflow: hidden !important;
+			}
+
 			#gafancybox-overlay366 {
 				background: rgba(219, 215, 215, 0.49);
 				opacity: ;
 			}
-			#gafancybox-skin366{
-			background: rgba(255, 255, 255, 0.99);/*popup background color*/
-			color: rgba(13, 0, 0, 1);/*popup font color*/
-			border-radius:0px;/*popup border radius*/
-				
-				
+
+			#gafancybox-skin366 {
+				background: rgba(255, 255, 255, 0.99);
+				/*popup background color*/
+				color: rgba(13, 0, 0, 1);
+				/*popup font color*/
+				border-radius: 0px;
+				/*popup border radius*/
+
+
 			}
-				
-			#gafancybox-close366{
-			right: -18px; position: absolute; top: -18px; width: 36px; height: 36px; cursor: pointer; z-index: 8040; background:url('/modules/mod_popupaholic/images/closeButton.png');
+
+			#gafancybox-close366 {
+				right: -18px;
+				position: absolute;
+				top: -18px;
+				width: 36px;
+				height: 36px;
+				cursor: pointer;
+				z-index: 8040;
+				background: url('/modules/mod_popupaholic/images/closeButton.png');
 			}
-				
-				.close-notify {
-					color: #ffffff!important;
-				}
-				#header_message366{  
-					display:none;
-					text-align: left;
-					font-size: 13px;
-					color: #ffffff!important;
-					background: none repeat scroll 0 0 rgba(50, 49, 59, 0.7);
-					box-shadow: 2px 2px 2px #cccccc;
-				}
-			</style>	
-			<script type="text/javascript">
-			var myCookie =  jQuery.cookie('popup_aholic366');    
-					
-					
-					
-					var noCookie = new Date(new Date().getTime() + 0 * 60 * 1000);
-					
-					if (myCookie != 1){
-					jQuery(document).ready(function() { setTimeout(function () { jQuery('.popup-aholic366').gafancybox({
-					padding : 30,
-					margin  : 30,
-					modal: false,
-					autoSize  : true,    
-					openEffect	: 'elastic', //elastic, fade or none
-					openSpeed   : 350,    
-					closeEffect	: 'elastic', //elastic, fade or none
-					closeSpeed   : 350,    
-						
+
+			.close-notify {
+				color: #ffffff !important;
+			}
+
+			#header_message366 {
+				display: none;
+				text-align: left;
+				font-size: 13px;
+				color: #ffffff !important;
+				background: none repeat scroll 0 0 rgba(50, 49, 59, 0.7);
+				box-shadow: 2px 2px 2px #cccccc;
+			}
+		</style>
+		<script type="text/javascript">
+			var myCookie = jQuery.cookie('popup_aholic366');
+
+
+
+			var noCookie = new Date(new Date().getTime() + 0 * 60 * 1000);
+
+			if (myCookie != 1) {
+				jQuery(document).ready(function () {
+					setTimeout(function () {
+						jQuery('.popup-aholic366').gafancybox({
+							padding: 30,
+							margin: 30,
+							modal: false,
+							autoSize: true,
+							openEffect: 'elastic', //elastic, fade or none
+							openSpeed: 350,
+							closeEffect: 'elastic', //elastic, fade or none
+							closeSpeed: 350,
+
 							scrolling: 'no',
-					autoHeight : true,
-					autoWidth : true,	
-						
-					tpl: {
-							overlay  : '<div class="gafancybox-overlay" id="gafancybox-overlay366"></div>',
-							wrap     : '<div class="gafancybox-wrap" tabIndex="-1"><div id="gafancybox-skin366" class="gafancybox-skin"><div class="gafancybox-outer"><div class="gafancybox-inner"></div></div></div></div>',
-							closeBtn : '<a title="Close" id="gafancybox-close366" class="gafancybox-item gafancybox-close" href="javascript:;"></a>',
-						},
-					helpers: {  overlay: { closeClick: true, title: false, lbwrap: '<div class="gafancybox-overlay" id="gafancybox-overlay366"></div>',opacity: 0.5}} ,afterShow: function(){setTimeout('parent.jQuery.gafancybox.close ()',200000);}
-			}).trigger('click');}, 0);
-						
-					jQuery('a.fancy-closeBTN').click(function(e){
+							autoHeight: true,
+							autoWidth: true,
+
+							tpl: {
+								overlay: '<div class="gafancybox-overlay" id="gafancybox-overlay366"></div>',
+								wrap: '<div class="gafancybox-wrap" tabIndex="-1"><div id="gafancybox-skin366" class="gafancybox-skin"><div class="gafancybox-outer"><div class="gafancybox-inner"></div></div></div></div>',
+								closeBtn: '<a title="Close" id="gafancybox-close366" class="gafancybox-item gafancybox-close" href="javascript:;"></a>',
+							},
+							helpers: { overlay: { closeClick: true, title: false, lbwrap: '<div class="gafancybox-overlay" id="gafancybox-overlay366"></div>', opacity: 0.5 } }, afterShow: function () { setTimeout('parent.jQuery.gafancybox.close ()', 200000); }
+						}).trigger('click');
+					}, 0);
+
+					jQuery('a.fancy-closeBTN').click(function (e) {
 						e.preventDefault();
 						jQuery.gafancybox.close();
 					});
-						
+
 				});
-				
-				jQuery.cookie('popup_aholic366', '1', { expires: noCookie }); 
+
+				jQuery.cookie('popup_aholic366', '1', { expires: noCookie });
 			}
-				</script>
-			<div id="popup_aholic"></div>	
-			<script type="text/javascript">
-			function killOverlay() {	
-			  refID = document.getElementById('popup_aholic');
-				refID.style.display = "none";	
+		</script>
+		<div id="popup_aholic"></div>
+		<script type="text/javascript">
+			function killOverlay() {
+				refID = document.getElementById('popup_aholic');
+				refID.style.display = "none";
 			}
-			function hidestuff(boxid){
-			   document.getElementById(boxid).style.visibility="hidden";
+			function hidestuff(boxid) {
+				document.getElementById(boxid).style.visibility = "hidden";
 			}
-			</script>	
-				<a class="popup-aholic366" href="#inline-auto366"></a>
-					<div style="display:none;">
-						<div id="inline-auto366" >
-											<p style="text-align: center;"> </p>
-			<div class="caption" style="text-align: center;"><span style="font-size: 36pt; font-family: 'andale mono', monospace;"><strong><a href="https://covid19.mohp.gov.np/"><span style="padding: 20px;">Click Here For COVID-19 Response</span></a></strong></span></div>					
-								
-						</div>
-					</div>
+		</script>
+		<a class="popup-aholic366" href="#inline-auto366"></a>
+		<div style="display:none;">
+			<div id="inline-auto366">
+				<p style="text-align: center;"> </p>
+				<div class="caption" style="text-align: center;"><span
+						style="font-size: 36pt; font-family: 'andale mono', monospace;"><strong><a
+								href="https://covid19.mohp.gov.np/"><span style="padding: 20px;">Click Here For COVID-19
+									Response</span></a></strong></span></div>
+
+			</div>
+		</div>
 
 		<div class="tm-minibar">
 			<div class=" uk-hidden-medium uk-hidden-small">
@@ -580,12 +604,14 @@
 											<div>
 												<h2>सुदुरपश्चिम प्रदेश, जनस्वास्थ्य प्रयोगशालामा स्वागत छ</h2>
 												<div class="uk-margin">
-													<p><span>सुदुरपश्चिम प्रदेश, जनस्वास्थ्य प्रयोगशाला, धनगढी प्रयोगशाला
-															सेवा प्रदान गर्ने सुदुरपश्चिम प्रदेशको प्रमुख प्राविधिक र
-															प्रशासनिक इकाई हो। सुदुरपश्चिम प्रदेश जनस्वास्थ्य प्रयोगशालाले
-															प्रदेश स्तरिय प्रयोगशालाहरूको माध्यमबाट सुदुरपश्चिम प्रदेशमा
-															गुणस्तरीय प्रयोगशाला सेवा (निदान र जनस्वास्थ्यसंग सम्बन्धित)
-															प्रदान गर्दछ ।</span> </p>
+													<p><span>नेपालको संविधान २०७२ को भाग ५ राज्यको संरचना तथा
+															राज्यशक्तिको बाँडफाँड अनुसार एकात्मक राज्यव्यवस्थाबाट मुलुक
+															संघीय लोकतान्त्रिक गणतन्त्रात्मक शासन व्यवस्थामा
+															पुनरसंरचनामा भए बमोजिम नेपालको संविधान २०७२ भाग ३ धारा ३५
+															अनुसार नागरिकको स्वास्थ्य सम्बन्धि हकको सुनिश्चता गर्न,
+															स्वास्थ्य उपचार सेवालाई सुदृढ तुल्याउन र स्वास्थ्य सेवा
+															प्रणालीलाई स्थानीयस्तरमा सहजरुपले उपलव्ध तथा प्रभावकारी
+															बनाउँदै..........</span> </p>
 												</div> <a class="uk-button-primary uk-button-large uk-button"
 													href="about-our-office.html" target="_self">थप
 													पढ्नुहोस्</a>
@@ -632,7 +658,8 @@
 					<div class="uk-width-1-1">
 						<div class="uk-panel uk-panel-box uk-panel-box-primary">
 
-							<p>प्रदेश जनस्वास्थ्य प्रयोगशाला, सुदुरपश्चिम प्रदेशको आधिकारिक वेबसाईटमा यहाँहरुलाई स्वागत छ !
+							<p>प्रदेश जनस्वास्थ्य प्रयोगशाला, सुदुरपश्चिम प्रदेशको आधिकारिक वेबसाईटमा यहाँहरुलाई स्वागत
+								छ !
 							</p>
 						</div>
 					</div>
@@ -779,7 +806,8 @@
 																									<a
 																										href="news-notices.html/138-electronic-bidding">
 
-																										सुदुरपश्चिम प्रदेश
+																										सुदुरपश्चिम
+																										प्रदेश
 																										जनस्वास्थ्य
 																										प्रयाेगशालाकाे
 																										उपकरण खरिदकाे
@@ -843,7 +871,8 @@
 																									<a
 																										href="news-notices.html/104-website-launched">
 
-																										सुदुरपश्चिम प्रदेश,
+																										सुदुरपश्चिम
+																										प्रदेश,
 																										जनस्वास्थ्य
 																										प्रयोगशालाको
 																										वेबसाईट सन्चालन
@@ -965,7 +994,8 @@
 																									<a
 																										href="news-notices.html/120-news">
 
-																										सुदुरपश्चिम प्रदेश
+																										सुदुरपश्चिम
+																										प्रदेश
 																										जनस्वास्थ्य
 																										प्रयाेगशालाकाे
 																										उपकरण खरिदकाे
@@ -1441,10 +1471,11 @@
 								<li>
 									<h3 class="background-color: 3399cc">हाम्रो बारेमा</h3>
 				</p>
-				<p style="margin: 20px 0px; color: #126bfa; font-family: Helvetica;">सुदुरपश्चिम प्रदेश जनस्वास्थ्य
-					प्रयोगशाला स्वास्थ्य प्रयोगशाला सेवा प्रदान गर्ने सुदुरपश्चिम प्रदेशको प्रमुख प्राविधिक र प्रशासनिक
-					इकाई हो। सुदुरपश्चिम प्रदेश जनस्वास्थ्य प्रयोगशालाले प्रदेश स्तरिय प्रयोगशालाहरूको माध्यमबाट सुदुरपश्चिम
-					प्रदेशमा गुणस्तरीय प्रयोगशाला सेवा (निदान र जनस्वास्थ्यसंग सम्बन्धित) प्रदान गर्दछ । </p>
+				<p style="margin: 20px 0px; color: #126bfa; font-family: Helvetica;">नेपालको संविधान २०७२ को भाग ५
+					राज्यको संरचना तथा राज्यशक्तिको बाँडफाँड अनुसार एकात्मक राज्यव्यवस्थाबाट मुलुक संघीय लोकतान्त्रिक
+					गणतन्त्रात्मक शासन व्यवस्थामा पुनरसंरचनामा भए बमोजिम नेपालको संविधान २०७२ भाग ३ धारा ३५ अनुसार
+					नागरिकको स्वास्थ्य सम्बन्धि हकको सुनिश्चता गर्न, स्वास्थ्य उपचार सेवालाई सुदृढ तुल्याउन र स्वास्थ्य
+					सेवा प्रणालीलाई स्थानीयस्तरमा सहजरुपले उपलव्ध तथा प्रभावकारी बनाउँदै....</p>
 				<p><a class="uk-button-primary uk-button" href="about-our-office.html" target="_self">थप
 						पढ्नुहोस्</a></li>
 					<li>
@@ -1609,7 +1640,7 @@
 						<div class="uk-form-icon uk-width-1-1">
 							<i class="uk-icon-grav-user2"></i>
 							<input class="uk-width-1-1" type="text" name="username" size="18"
-								placeholder="उपयोगकर्ता नाम">
+								placeholder="प्रयोगकर्ता">
 						</div>
 					</div>
 
@@ -1617,7 +1648,7 @@
 						<div class="uk-form-password uk-form-icon uk-width-1-1">
 							<i class="uk-icon-grav-key2"></i>
 							<input class="uk-width-1-1" type="password" name="password" size="18"
-								placeholder="कूट शब्द">
+								placeholder="पसवोर्ड">
 							<a href="/" class="uk-form-password-toggle"
 								data-uk-form-password="{lblShow:'&lt;i class=&quot;uk-icon-eye&quot;&gt;&lt;/i&gt;', lblHide:'&lt;i class=&quot;uk-icon-eye-slash&quot;&gt;&lt;/i&gt;'}"><i
 									class="uk-icon-eye"></i></a>
@@ -1626,19 +1657,19 @@
 
 
 					<div class="uk-form-row">
-						<button class="uk-button uk-button-primary uk-width-1-1" value="सत्रारंभ" name="Submit"
-							type="submit">सत्रारंभ</button>
+						<button class="uk-button uk-button-primary uk-width-1-1" value="सुरक्षित गर्नुस" name="Submit"
+							type="submit">सुरक्षित गर्नुस</button>
 					</div>
 
 					<div class="uk-form-row uk-hidden">
-						<label for="modlgn-remember-485138566">मुझे याद रखें</label>
+						<label for="modlgn-remember-485138566">Remember Me</label>
 						<input id="modlgn-remember-485138566" type="checkbox" name="remember" value="yes" checked>
 					</div>
 
 					<ul class="uk-list uk-margin-bottom-remove">
-						<li><a href="/component/users/?view=reset&amp;Itemid=781">अपना पासवर्ड भूल गए?</a></li>
-						<li><a href="/component/users/?view=remind&amp;Itemid=781">अपना उपयोगकर्ता नाम भूल गए?</a></li>
-						<li><a href="/component/users/?view=registration&amp;Itemid=781">एक खाता बनाएँ</a></li>
+						<li><a href="/component/users/?view=reset&amp;Itemid=781">Forget Password?</a></li>
+						<li><a href="/component/users/?view=remind&amp;Itemid=781">Forget Username?</a></li>
+						<li><a href="/component/users/?view=registration&amp;Itemid=781">Create Account</a></li>
 					</ul>
 
 
@@ -1671,7 +1702,7 @@
 						<li><a href="about-our-office.html">हाम्रो बारेमा</a></li>
 						<li><a href="message-from-the-chief.html">कार्यालय प्रमुखको सन्देश</a></li>
 						<li><a href="staff-information.html">कर्मचारी विवरण</a></li>
-						<li><a href="/organization-structure.html">संगठनात्मक संरचना</a></li>
+						<li><a href="organization-structure.html">संगठनात्मक संरचना</a></li>
 					</ul>
 				</li>
 				<li><a href="programs.html">कार्यक्रम</a></li>

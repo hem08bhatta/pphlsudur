@@ -188,7 +188,7 @@
 					<div class="uk-panel">
 						<ul class="uk-subnav uk-subnav-line">
 							<li><a href="#">डाउनलोड</a></li>
-							<li><a href="#" class="tm-modal-link">लग ईन</a></li>
+							<li><a href="#modal-a" class="tm-modal-link">लग ईन</a></li>
 						</ul>
 					</div>
 				</div>
@@ -750,109 +750,106 @@
 
             <div id="modal-a" class="uk-modal">
 
-                <div class="uk-modal-dialog uk-modal-dialog-lightbox  uk-modal-dialog-small">
-                    <a class="uk-modal-close uk-close uk-close-alt"></a>
-                    <div class="uk-panel-box">
-                        <h3 class="uk-panel-title ">Sign In</h3>
-                        <form class="uk-form" action="/" method="post">
-
-
-                            <div class="uk-form-row">
-                                <div class="uk-form-icon uk-width-1-1">
-                                    <i class="uk-icon-grav-user2"></i>
-                                    <input class="uk-width-1-1" type="text" name="username" size="18"
-                                        placeholder="उपयोगकर्ता नाम">
-                                </div>
-                            </div>
-
-                            <div class="uk-form-row">
-                                <div class="uk-form-password uk-form-icon uk-width-1-1">
-                                    <i class="uk-icon-grav-key2"></i>
-                                    <input class="uk-width-1-1" type="password" name="password" size="18"
-                                        placeholder="कूट शब्द">
-                                    <a href="/" class="uk-form-password-toggle"
-                                        data-uk-form-password="{lblShow:'&lt;i class=&quot;uk-icon-eye&quot;&gt;&lt;/i&gt;', lblHide:'&lt;i class=&quot;uk-icon-eye-slash&quot;&gt;&lt;/i&gt;'}"><i
-                                            class="uk-icon-eye"></i></a>
-                                </div>
-                            </div>
-
-
-                            <div class="uk-form-row">
-                                <button class="uk-button uk-button-primary uk-width-1-1" value="सत्रारंभ" name="Submit"
-                                    type="submit">सत्रारंभ</button>
-                            </div>
-
-                            <div class="uk-form-row uk-hidden">
-                                <label for="modlgn-remember-485138566">मुझे याद रखें</label>
-                                <input id="modlgn-remember-485138566" type="checkbox" name="remember" value="yes"
-                                    checked>
-                            </div>
-
-                            <ul class="uk-list uk-margin-bottom-remove">
-                                <li><a href="/component/users/?view=reset&amp;Itemid=781">अपना पासवर्ड भूल गए?</a></li>
-                                <li><a href="/component/users/?view=remind&amp;Itemid=781">अपना उपयोगकर्ता नाम भूल
-                                        गए?</a></li>
-                                <li><a href="/component/users/?view=registration&amp;Itemid=781">एक खाता बनाएँ</a></li>
-                            </ul>
-
-
-                            <input type="hidden" name="option" value="com_users">
-                            <input type="hidden" name="task" value="user.login">
-                            <input type="hidden" name="return"
-                                value="aHR0cDovL3BwaGwuZ2FuZGFraS5nb3YubnAvP2ZiY2xpZD1Jd0FSMmhjcDlzbGJYTlRMSkE2Rll5bEl2Q2luN19pVW12OG5ZdGc0Qng1N1IwTkliQXlpVDdnYlZxRzd3">
-                            <input type="hidden" name="1461a1803846e765c25c4570b9064031" value="1" />
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div id="offcanvas" class="uk-offcanvas">
-                <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
-                    <div class="uk-panel">
-                        <form id="search-284" class="uk-search" action="/" method="post">
-                            <input class="uk-search-field" type="text" name="searchword" placeholder="search...">
-                            <input type="hidden" name="task" value="search">
-                            <input type="hidden" name="option" value="com_search">
-                            <input type="hidden" name="Itemid" value="781">
-                        </form>
-                    </div>
-                    <ul class="uk-nav uk-nav-parent-icon uk-nav-offcanvas" data-uk-nav="{}">
-                        <li class="uk-active"><a href="index.html">गृह पृष्ठ</a></li>
-                        <li class="uk-parent"><a href="#">हाम्रो बारेमा</a>
-                            <ul class="uk-nav-sub">
-                                <li><a href="about-our-office.html">हाम्रो बारेमा</a></li>
-                                <li><a href="message-from-the-chief.html">कार्यालय प्रमुखको सन्देश</a></li>
-                                <li><a href="staff-information.html">कर्मचारी विवरण</a></li>
-                                <li><a href="organization-structure.html">संगठनात्मक संरचना</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="programs.html">कार्यक्रम</a></li>
-                        <li class="uk-parent"><a href="#">मिडिया</a>
-                            <ul class="uk-nav-sub">
-                                <li><a href="news-notices.html">सूचना तथा समाचार</a></li>
-                                <li><a href="photo-gallery.html">फोटो संग्रह</a></li>
-                                <li><a href="video-gallery.html">भिडियो संग्रह</a></li>
-                            </ul>
-                        </li>
-                        <li class="uk-parent"><a href="#">प्रकाशन</a>
-                            <ul class="uk-nav-sub">
-                                <li><a href="reports.html">प्रतिवेदन</a></li>
-                                <li><a href="policies-acts-rules.html">ऐन तथा नीति नियमावली</a></li>
-                                <li><a href="guidelines-manuals.html">निर्देशिका तथा सहयोगी पुस्तिकाहरु</a>
-                                </li>
-                                <li><a href="forms-formats.html">फारम तथा ढाँचाहरु</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="licensed-laboratory.html">दर्ता भएका प्रयाोगशाला</a></li>
-                        <li><a href="contact-us-page.html">सम्पर्क र प्रतिक्रिया</a></li>
-                    </ul>
-                </div>
-            </div>
-
-
-
-</body>
-
-</html>
+				<div class="uk-modal-dialog uk-modal-dialog-lightbox  uk-modal-dialog-small">
+					<a class="uk-modal-close uk-close uk-close-alt"></a>
+					<div class="uk-panel-box">
+						<h3 class="uk-panel-title ">Sign In</h3>
+						<form class="uk-form" action="/" method="post">
+		
+		
+							<div class="uk-form-row">
+								<div class="uk-form-icon uk-width-1-1">
+									<i class="uk-icon-grav-user2"></i>
+									<input class="uk-width-1-1" type="text" name="username" size="18"
+										placeholder="प्रयोगकर्ता">
+								</div>
+							</div>
+		
+							<div class="uk-form-row">
+								<div class="uk-form-password uk-form-icon uk-width-1-1">
+									<i class="uk-icon-grav-key2"></i>
+									<input class="uk-width-1-1" type="password" name="password" size="18"
+										placeholder="पसवोर्ड">
+									<a href="/" class="uk-form-password-toggle"
+										data-uk-form-password="{lblShow:'&lt;i class=&quot;uk-icon-eye&quot;&gt;&lt;/i&gt;', lblHide:'&lt;i class=&quot;uk-icon-eye-slash&quot;&gt;&lt;/i&gt;'}"><i
+											class="uk-icon-eye"></i></a>
+								</div>
+							</div>
+		
+		
+							<div class="uk-form-row">
+								<button class="uk-button uk-button-primary uk-width-1-1" value="सुरक्षित गर्नुस" name="Submit"
+									type="submit">सुरक्षित गर्नुस</button>
+							</div>
+		
+							<div class="uk-form-row uk-hidden">
+								<label for="modlgn-remember-485138566">Remember Me</label>
+								<input id="modlgn-remember-485138566" type="checkbox" name="remember" value="yes" checked>
+							</div>
+		
+							<ul class="uk-list uk-margin-bottom-remove">
+								<li><a href="/component/users/?view=reset&amp;Itemid=781">Forget Password?</a></li>
+								<li><a href="/component/users/?view=remind&amp;Itemid=781">Forget Username?</a></li>
+								<li><a href="/component/users/?view=registration&amp;Itemid=781">Create Account</a></li>
+							</ul>
+		
+		
+							<input type="hidden" name="option" value="com_users">
+							<input type="hidden" name="task" value="user.login">
+							<input type="hidden" name="return"
+								value="aHR0cDovL3BwaGwuZ2FuZGFraS5nb3YubnAvP2ZiY2xpZD1Jd0FSMmhjcDlzbGJYTlRMSkE2Rll5bEl2Q2luN19pVW12OG5ZdGc0Qng1N1IwTkliQXlpVDdnYlZxRzd3">
+							<input type="hidden" name="1461a1803846e765c25c4570b9064031" value="1" />
+						</form>
+					</div>
+				</div>
+			</div>
+		
+		
+		
+			<div id="offcanvas" class="uk-offcanvas">
+				<div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+					<div class="uk-panel">
+						<form id="search-284" class="uk-search" action="/" method="post">
+							<input class="uk-search-field" type="text" name="searchword" placeholder="search...">
+							<input type="hidden" name="task" value="search">
+							<input type="hidden" name="option" value="com_search">
+							<input type="hidden" name="Itemid" value="781">
+						</form>
+					</div>
+					<ul class="uk-nav uk-nav-parent-icon uk-nav-offcanvas" data-uk-nav="{}">
+						<li class="uk-active"><a href="index.html">गृह पृष्ठ</a></li>
+						<li class="uk-parent"><a href="#">हाम्रो बारेमा</a>
+							<ul class="uk-nav-sub">
+								<li><a href="about-our-office.html">हाम्रो बारेमा</a></li>
+								<li><a href="message-from-the-chief.html">कार्यालय प्रमुखको सन्देश</a></li>
+								<li><a href="staff-information.html">कर्मचारी विवरण</a></li>
+								<li><a href="organization-structure.html">संगठनात्मक संरचना</a></li>
+							</ul>
+						</li>
+						<li><a href="programs.html">कार्यक्रम</a></li>
+						<li class="uk-parent"><a href="#">मिडिया</a>
+							<ul class="uk-nav-sub">
+								<li><a href="news-notices.html">सूचना तथा समाचार</a></li>
+								<li><a href="photo-gallery.html">फोटो संग्रह</a></li>
+								<li><a href="video-gallery.html">भिडियो संग्रह</a></li>
+							</ul>
+						</li>
+						<li class="uk-parent"><a href="#">प्रकाशन</a>
+							<ul class="uk-nav-sub">
+								<li><a href="reports.html">प्रतिवेदन</a></li>
+								<li><a href="policies-acts-rules.html">ऐन तथा नीति नियमावली</a></li>
+								<li><a href="guidelines-manuals.html">निर्देशिका तथा सहयोगी पुस्तिकाहरु</a></li>
+								<li><a href="forms-formats.html">फारम तथा ढाँचाहरु</a></li>
+							</ul>
+						</li>
+						<li><a href="licensed-laboratory.html">दर्ता भएका प्रयाोगशाला</a></li>
+						<li><a href="contact-us-page.html">सम्पर्क र प्रतिक्रिया</a></li>
+					</ul>
+				</div>
+			</div>
+		
+		
+		
+		</body>
+		
+		</html>

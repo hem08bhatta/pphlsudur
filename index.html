@@ -13,7 +13,7 @@
 		health sector in sudur pashim, sudur pashim health situation, public health in sudur pashim" />
 	<meta name="author" content="PPHL Sudur Pashim" />
 	<meta name="description" content="Sudur Pashim Province Province Public Health Laboratory" />
-	<title>प्रदेश जनस्वास्थ्य प्रयोगशाला, सुदुरपशिम प्रदेश</title>
+	<title>प्रदेश जनस्वास्थ्य प्रयोगशाला, सुदुरपश्चिम प्रदेश</title>
 	<link href="modules/style3.css" rel="stylesheet" type="text/css" />
 	<link href="modules/superfish.css" rel="stylesheet" type="text/css" />
 	<link href="modules/style.css" rel="stylesheet" type="text/css" />
@@ -26,6 +26,7 @@
 	<link href="modules/menu.min.css" rel="stylesheet" type="text/css" />
 	<link href="modules/menu.fix.css" rel="stylesheet" type="text/css" />
 	<link href="modules/marquee.css" rel="stylesheet" type="text/css" />
+	<link href="media/jquery.gafancybox.min.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style type="text/css">
 		#sptab532 .tabs_mask,
@@ -90,7 +91,12 @@
 	<script src="modules/jquery.marquee.min.js" type="text/javascript"></script>
 	<script src="modules/jquery.pause.js" type="text/javascript"></script>
 	<script src="modules/jquery.easing.min.js" type="text/javascript"></script>
-	<script src="media//keepalive.js" type="text/javascript"></script>
+	<script src="media/keepalive.js" type="text/javascript"></script>
+	<script src="media/jquery.gafancybox-media.min.js" type="text/javascript"></script>
+	<script src="media/jquery.gafancybox.min.css" type="text/javascript"></script>
+	<script src="media/jquery.popup.js" type="text/javascript"></script>
+	<script src="media/popper.js" type="text/javascript"></script>
+	<script src="media/jquery-cookie.min.js.js" type="text/javascript"></script>
 	<script type="text/javascript">
 
 
@@ -230,9 +236,9 @@
 								<p>
 									<div class="uk-width-medium-1-3 uk-width-small-1-3">
 										<div class="uk-flex tm-block-icon-container">
-											
+
 											<div class="tm-block-content">
-												
+
 											</div>
 										</div>
 									</div>
@@ -272,6 +278,95 @@
 				</div>
 			</div>
 		</div>
+		<style>
+			.gafancybox-lock {overflow: hidden !important;}
+			.gafancybox-inner {overflow: hidden !important;}
+			#gafancybox-overlay366 {
+				background: rgba(219, 215, 215, 0.49);
+				opacity: ;
+			}
+			#gafancybox-skin366{
+			background: rgba(255, 255, 255, 0.99);/*popup background color*/
+			color: rgba(13, 0, 0, 1);/*popup font color*/
+			border-radius:0px;/*popup border radius*/
+				
+				
+			}
+				
+			#gafancybox-close366{
+			right: -18px; position: absolute; top: -18px; width: 36px; height: 36px; cursor: pointer; z-index: 8040; background:url('/modules/mod_popupaholic/images/closeButton.png');
+			}
+				
+				.close-notify {
+					color: #ffffff!important;
+				}
+				#header_message366{  
+					display:none;
+					text-align: left;
+					font-size: 13px;
+					color: #ffffff!important;
+					background: none repeat scroll 0 0 rgba(50, 49, 59, 0.7);
+					box-shadow: 2px 2px 2px #cccccc;
+				}
+			</style>	
+			<script type="text/javascript">
+			var myCookie =  jQuery.cookie('popup_aholic366');    
+					
+					
+					
+					var noCookie = new Date(new Date().getTime() + 0 * 60 * 1000);
+					
+					if (myCookie != 1){
+					jQuery(document).ready(function() { setTimeout(function () { jQuery('.popup-aholic366').gafancybox({
+					padding : 30,
+					margin  : 30,
+					modal: false,
+					autoSize  : true,    
+					openEffect	: 'elastic', //elastic, fade or none
+					openSpeed   : 350,    
+					closeEffect	: 'elastic', //elastic, fade or none
+					closeSpeed   : 350,    
+						
+							scrolling: 'no',
+					autoHeight : true,
+					autoWidth : true,	
+						
+					tpl: {
+							overlay  : '<div class="gafancybox-overlay" id="gafancybox-overlay366"></div>',
+							wrap     : '<div class="gafancybox-wrap" tabIndex="-1"><div id="gafancybox-skin366" class="gafancybox-skin"><div class="gafancybox-outer"><div class="gafancybox-inner"></div></div></div></div>',
+							closeBtn : '<a title="Close" id="gafancybox-close366" class="gafancybox-item gafancybox-close" href="javascript:;"></a>',
+						},
+					helpers: {  overlay: { closeClick: true, title: false, lbwrap: '<div class="gafancybox-overlay" id="gafancybox-overlay366"></div>',opacity: 0.5}} ,afterShow: function(){setTimeout('parent.jQuery.gafancybox.close ()',200000);}
+			}).trigger('click');}, 0);
+						
+					jQuery('a.fancy-closeBTN').click(function(e){
+						e.preventDefault();
+						jQuery.gafancybox.close();
+					});
+						
+				});
+				
+				jQuery.cookie('popup_aholic366', '1', { expires: noCookie }); 
+			}
+				</script>
+			<div id="popup_aholic"></div>	
+			<script type="text/javascript">
+			function killOverlay() {	
+			  refID = document.getElementById('popup_aholic');
+				refID.style.display = "none";	
+			}
+			function hidestuff(boxid){
+			   document.getElementById(boxid).style.visibility="hidden";
+			}
+			</script>	
+				<a class="popup-aholic366" href="#inline-auto366"></a>
+					<div style="display:none;">
+						<div id="inline-auto366" >
+											<p style="text-align: center;"> </p>
+			<div class="caption" style="text-align: center;"><span style="font-size: 36pt; font-family: 'andale mono', monospace;"><strong><a href="https://covid19.mohp.gov.np/"><span style="padding: 20px;">Click Here For COVID-19 Response</span></a></strong></span></div>					
+								
+						</div>
+					</div>
 
 		<div class="tm-minibar">
 			<div class=" uk-hidden-medium uk-hidden-small">
@@ -410,12 +505,12 @@
 						</strong></a>&nbsp;&nbsp;
 					&nbsp;&nbsp;
 					<a href="news-notices.html"> <strong>
-							<left><span style="font-size: 14px;">सुदुरपशि प्रदेश जनस्वास्थ्य प्रयाेगशालाकाे उपकरण
+							<left><span style="font-size: 14px;">सुदुरपश्चिम प्रदेश जनस्वास्थ्य प्रयाेगशालाकाे उपकरण
 									खरिदकाे Electronic Bidding सम्वन्धमा ।</span></left>
 						</strong></a>&nbsp;&nbsp;
 					&nbsp;&nbsp;
 					<a href="news-notices.html"> <strong>
-							<left><span style="font-size: 14px;">सुदुरपशि प्रदेश, जनस्वास्थ्य प्रयोगशालाको वेबसाईट
+							<left><span style="font-size: 14px;">सुदुरपश्चिम प्रदेश, जनस्वास्थ्य प्रयोगशालाको वेबसाईट
 									सन्चालन</span></left>
 						</strong></a>&nbsp;&nbsp;
 					&nbsp;&nbsp;
@@ -424,7 +519,7 @@
 						</strong></a>&nbsp;&nbsp;
 					&nbsp;&nbsp;
 					<a href="news-notices.html"> <strong>
-							<left><span style="font-size: 14px;">सुदुरपशि प्रदेश जनस्वास्थ्य प्रयाेगशालाकाे उपकरण
+							<left><span style="font-size: 14px;">सुदुरपश्चिम प्रदेश जनस्वास्थ्य प्रयाेगशालाकाे उपकरण
 									खरिदकाे Electronic Bidding सम्बन्धमा ।</span></left>
 						</strong></a>&nbsp;&nbsp;
 					&nbsp;&nbsp;
@@ -483,12 +578,12 @@
 									<li> <img src="/" width="1900" height="800" alt="image">
 										<div class="uk-overlay-panel uk-flex uk-flex-middle uk-overlay-slide-left">
 											<div>
-												<h2>सुदुरपशि प्रदेश, जनस्वास्थ्य प्रयोगशालामा स्वागत छ</h2>
+												<h2>सुदुरपश्चिम प्रदेश, जनस्वास्थ्य प्रयोगशालामा स्वागत छ</h2>
 												<div class="uk-margin">
-													<p><span>सुदुरपशि प्रदेश, जनस्वास्थ्य प्रयोगशाला, धनगढी प्रयोगशाला
-															सेवा प्रदान गर्ने सुदुरपशि प्रदेशको प्रमुख प्राविधिक र
-															प्रशासनिक इकाई हो। सुदुरपशि प्रदेश जनस्वास्थ्य प्रयोगशालाले
-															प्रदेश स्तरिय प्रयोगशालाहरूको माध्यमबाट सुदुरपशि प्रदेशमा
+													<p><span>सुदुरपश्चिम प्रदेश, जनस्वास्थ्य प्रयोगशाला, धनगढी प्रयोगशाला
+															सेवा प्रदान गर्ने सुदुरपश्चिम प्रदेशको प्रमुख प्राविधिक र
+															प्रशासनिक इकाई हो। सुदुरपश्चिम प्रदेश जनस्वास्थ्य प्रयोगशालाले
+															प्रदेश स्तरिय प्रयोगशालाहरूको माध्यमबाट सुदुरपश्चिम प्रदेशमा
 															गुणस्तरीय प्रयोगशाला सेवा (निदान र जनस्वास्थ्यसंग सम्बन्धित)
 															प्रदान गर्दछ ।</span> </p>
 												</div> <a class="uk-button-primary uk-button-large uk-button"
@@ -537,7 +632,7 @@
 					<div class="uk-width-1-1">
 						<div class="uk-panel uk-panel-box uk-panel-box-primary">
 
-							<p>प्रदेश जनस्वास्थ्य प्रयोगशाला, सुदुरपशि प्रदेशको आधिकारिक वेबसाईटमा यहाँहरुलाई स्वागत छ !
+							<p>प्रदेश जनस्वास्थ्य प्रयोगशाला, सुदुरपश्चिम प्रदेशको आधिकारिक वेबसाईटमा यहाँहरुलाई स्वागत छ !
 							</p>
 						</div>
 					</div>
@@ -684,7 +779,7 @@
 																									<a
 																										href="news-notices.html/138-electronic-bidding">
 
-																										सुदुरपशि प्रदेश
+																										सुदुरपश्चिम प्रदेश
 																										जनस्वास्थ्य
 																										प्रयाेगशालाकाे
 																										उपकरण खरिदकाे
@@ -748,7 +843,7 @@
 																									<a
 																										href="news-notices.html/104-website-launched">
 
-																										सुदुरपशि प्रदेश,
+																										सुदुरपश्चिम प्रदेश,
 																										जनस्वास्थ्य
 																										प्रयोगशालाको
 																										वेबसाईट सन्चालन
@@ -870,7 +965,7 @@
 																									<a
 																										href="news-notices.html/120-news">
 
-																										सुदुरपशि प्रदेश
+																										सुदुरपश्चिम प्रदेश
 																										जनस्वास्थ्य
 																										प्रयाेगशालाकाे
 																										उपकरण खरिदकाे
@@ -1294,7 +1389,7 @@
 			<div class="merocard" align="center"><br /><img src="images/ram.jpg" alt="Information Officer"
 					align="center" />
 				<div class="merocontainer">
-					<h6><b>श्री राम प्रशाद ओझा  </b><br />सुचना अधिकारी<br />फोनः ९८४८४२५०७८</h6>
+					<h6><b>श्री राम प्रशाद ओझा </b><br />सुचना अधिकारी<br />फोनः ९८४८४२५०७८</h6>
 				</div>
 			</div>
 		</div>
@@ -1346,9 +1441,9 @@
 								<li>
 									<h3 class="background-color: 3399cc">हाम्रो बारेमा</h3>
 				</p>
-				<p style="margin: 20px 0px; color: #126bfa; font-family: Helvetica;">सुदुरपशि प्रदेश जनस्वास्थ्य
-					प्रयोगशाला स्वास्थ्य प्रयोगशाला सेवा प्रदान गर्ने सुदुरपशि प्रदेशको प्रमुख प्राविधिक र प्रशासनिक
-					इकाई हो। सुदुरपशि प्रदेश जनस्वास्थ्य प्रयोगशालाले प्रदेश स्तरिय प्रयोगशालाहरूको माध्यमबाट सुदुरपशि
+				<p style="margin: 20px 0px; color: #126bfa; font-family: Helvetica;">सुदुरपश्चिम प्रदेश जनस्वास्थ्य
+					प्रयोगशाला स्वास्थ्य प्रयोगशाला सेवा प्रदान गर्ने सुदुरपश्चिम प्रदेशको प्रमुख प्राविधिक र प्रशासनिक
+					इकाई हो। सुदुरपश्चिम प्रदेश जनस्वास्थ्य प्रयोगशालाले प्रदेश स्तरिय प्रयोगशालाहरूको माध्यमबाट सुदुरपश्चिम
 					प्रदेशमा गुणस्तरीय प्रयोगशाला सेवा (निदान र जनस्वास्थ्यसंग सम्बन्धित) प्रदान गर्दछ । </p>
 				<p><a class="uk-button-primary uk-button" href="about-our-office.html" target="_self">थप
 						पढ्नुहोस्</a></li>
@@ -1369,9 +1464,9 @@
 						<h3 class="background-color: 3390cc">कार्यालय प्रमुखको सन्देश</h3>
 				</p>
 				<p>नेपालको संविधान २०७२ अनुसार देशमा संघीयता लागू गरि सो को कायार्न्वयन गर्ने उदेश्य अनुरुप संघ, प्रदेश
-					र स्थानीय तह गरि तीन तहको राजनीतिक तथा प्रशासनिक ईकाइहरु रहने व्यवस्था मुताविक सुदुरपशिम प्रदेश,
+					र स्थानीय तह गरि तीन तहको राजनीतिक तथा प्रशासनिक ईकाइहरु रहने व्यवस्था मुताविक सुदुरपश्चिम प्रदेश,
 					सामाजिक विकास मन्त्रालय मातहत जनस्वास्थ्य प्रयोगशाला, धनगढीको स्थापना भई सेवा संचालन गर्दै आई रहेको
-					छ । यस कार्यालयको कार्य क्षेत्र सुदुरपशि प्रदेश अन्तरगतका सम्पुर्ण जिल्लाहरु रहेको र हाल धनगढी
+					छ । यस कार्यालयको कार्य क्षेत्र सुदुरपश्चिम प्रदेश अन्तरगतका सम्पुर्ण जिल्लाहरु रहेको र हाल धनगढी
 					महानगरपालिकामा अवस्थित रहेको छ । <br /><a class="uk-button-primary uk-button"
 						href="message-from-the-chief.html" target="_self">थप पढ्नुहोस्</a></li>
 					<li>
@@ -1425,12 +1520,11 @@
 								target="_blank" rel="noopener noreferrer">राष्ट्रिय स्वास्थ्य नीति</a></li>
 						<li><i class="uk-icon-file-pdf-o"></i><a href="downloads/Population_Policy.pdf" target="_blank"
 								rel="noopener noreferrer"> राष्ट्रिय जनसंख्या नीति</a></li>
-						<li><i class="uk-icon-file-pdf-o"></i><a
-								href="downloads/GenderStratety.pdf" target="_blank"
+						<li><i class="uk-icon-file-pdf-o"></i><a href="downloads/GenderStratety.pdf" target="_blank"
 								rel="noopener noreferrer">स्वास्थ्य क्षेत्रको लैंगिक समानता तथा सामाजिक समावेशिकरण
 								रणनीति </a></li>
-						<li><i class="uk-icon-file-pdf-o"></i><a href="downloads/health.pdf"
-								target="_blank" rel="noopener noreferrer">स्वास्थ्य क्षेत्रको रणनीति</a></li>
+						<li><i class="uk-icon-file-pdf-o"></i><a href="downloads/health.pdf" target="_blank"
+								rel="noopener noreferrer">स्वास्थ्य क्षेत्रको रणनीति</a></li>
 					</ul>
 				</p>
 			</div>
@@ -1480,7 +1574,7 @@
 				<div class="tm-footer-left">
 					<div class="uk-panel">
 
-						<p>© प्रदेश जनस्वास्थ्य प्रयोगशाला, सुदुरपशि प्रदेश | सर्वाधिकार सुरक्षित</p>
+						<p>© प्रदेश जनस्वास्थ्य प्रयोगशाला, सुदुरपश्चिम प्रदेश | सर्वाधिकार सुरक्षित</p>
 					</div>
 				</div>
 
